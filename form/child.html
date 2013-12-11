@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Little window</title>
+	<script language="JavaScript" type="text/javascript">
+		function updateParent(textField) {
+			opener.document.outputForm.msgLine.value = "Hello " + textField.value + "!"
+		}
+	</script>
+</head>
+<body bgcolor="white">
+<h1>What's your name?</h1>
+<form>
+	<input type="TEXT" onblur="updateParent(this)" size="20">
+</form>
+
+</body>
+</html>
